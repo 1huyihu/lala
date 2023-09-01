@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>庆祝科师大成立七十周年！</title>
+    <style>
+      /* 把我们所有标签的内外边距清零 */
+* {
+  margin: 0;
+  padding: 0;
+  /* css3盒子模型 */
+  box-sizing: border-box;
+}
+/* em 和 i 斜体的文字不倾斜 */
+em,
+i {
+  font-style: normal;
+}
+/* 去掉li 的小圆点 */
+li {
+  list-style: none;
+}
+img {
+  /* border 0 照顾低版本浏览器 如果 图片外面包含了链接会有边框的问题 */
+  border: 0;
+  /* 取消图片底侧有空白缝隙的问题 */
+  vertical-align: middle;
+}
+button {
+  /* 当我们鼠标经过button 按钮的时候，鼠标变成小手 */
+  cursor: pointer;
+}
+a,
+span {
+  color: #666;
+  text-decoration: none;
+}
+a:hover {
+  color: #c81623;
+}
+button,
+input {
+  /* "\5B8B\4F53" 就是宋体的意思 这样浏览器兼容性比较好 */
+  font-family: Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
+  /* 默认有灰色边框我们需要手动去掉 */
+  border: 0;
+  outline: none;
+}
+body {
+  /* CSS3 抗锯齿形 让文字显示的更加清晰 */
+  -webkit-font-smoothing: antialiased;
+  background-color: #fff;
+  font: 12px/1.5 Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
+  color: #060000;
+}
+.hide,
+.none {
+  display: none;
+}
+/* 清除浮动 */
+.clearfix:after {
+  visibility: hidden;
+  clear: both;
+  display: block;
+  content: ".";
+  height: 0;
+}
+
+/* CDN 服务仅供平台体验和调试使用，平台不承诺服务的稳定性，企业客户需下载字体包自行发布使用并做好备份。 */
+* {
+  padding: 0;
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+}
+/*大容器*/
+.show {
+  /* width: 23.437rem; */
+  height: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  position: relative;
+  padding: 0;
+}
+.page {
+  width: 100vw;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  display: none;
+  /* font-size: 50px; */
+  text-align: center;
+}
+/*设置每一页的背景色*/
+.page:nth-child(1) {
+  display: block;
+  /* background-color: pink; */
+}
+/* .page:nth-child(2){
+	
+	background-color: gold;
+} */
+/* .page:nth-child(3){
+
+	background-color: seagreen;
+} */
+/* .page:nth-child(4){
+
+	background-color: peachpuff;
+} */
+/* .page:nth-child(5){
+
+	background-color:darkgrey;
+} */
+.hide {
+  display: none;
+}
+/*设置翻页的动画*/
+.out_top {
+  animation: out_top 0.5s linear both;
+}
+.in_top {
+  animation: in_top 0.5s linear both;
+}
+.out_down {
+  animation: out_down 0.5s linear both;
+}
+.in_down {
+  animation: in_down 0.5s linear both;
+}
+/*当前页-->向上翻-->隐藏*/
+@keyframes out_top {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(-100%);
+  }
+}
+/*下一页-->向上翻-->显示*/
+@keyframes in_top {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+/*当前页-->向下拉-->隐藏*/
+@keyframes out_down {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(100%);
+  }
+}
+/*上一页-->向下拉-->显示*/
+@keyframes in_down {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+.wrapper {
+  width: 92vw;
+  margin: 0 auto;
+}
+.page {
+  color: #514402;
+}
+h3 {
+  color: #000;
+}
+.page:nth-child(1) header {
+  text-align: center;
+}
+.page:nth-child(1) header .tet {
+  font-size: 6vw;
+  line-height: 7.5vw;
+  margin-top: 131vw;
+  margin-left: 10vw;
+}
+.page:nth-child(1) header span {
+  display: block;
+  font-size: 2vw;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+  color: #b2a0ab;
+}
+.page:nth-child(2) section:nth-child(1) {
+  text-align: center;
+}
+.page:nth-child(2) section:nth-child(1) #png1 {
+  width: 34vh;
+  margin-top: 5vh;
+}
+.page:nth-child(2) section:nth-child(1) .text1 {
+  line-height: 3.5vh;
+  height: 20vh;
+  font-size: 2.5vh;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 1vh;
+  margin-bottom: 2vh;
+}
+.page:nth-child(2) section:nth-child(2) {
+  text-align: center;
+}
+.page:nth-child(2) section:nth-child(2) #png2 {
+  width: 34vh;
+}
+.page:nth-child(2) section:nth-child(2) .text2 {
+  line-height: 3.5vh;
+  text-align: center;
+  height: 20vh;
+  font-size: 2.5vh;
+  font-weight: 500;
+  margin-top: 1vh;
+  margin-bottom: 5vw;
+}
+.page:nth-child(3) .text {
+  font-size: 2.5vh;
+  margin-top: 30vh;
+  margin-bottom: 5vh;
+  text-align: center;
+  font-weight: 500;
+}
+.page:nth-child(3) .text p:last-child {
+  margin-top: 1vh;
+}
+.page:nth-child(3) .box {
+  padding: 0 auto;
+  margin: 0 auto;
+  margin-top: 22vw;
+  height: 70vw;
+  width: 62vw;
+  position: relative;
+}
+.page:nth-child(3) .box img {
+  border: 5px solid white;
+  width: 46vw;
+  box-shadow: 2px 2px 4px #666;
+  border-radius: 5vw;
+  transition: all 1s;
+}
+.page:nth-child(3) .box img:hover {
+  transform: scale(1.5, 1.5);
+  z-index: 10;
+}
+.page:nth-child(3) .img1 {
+  position: absolute;
+  top: 5vw;
+  left: -16vw;
+}
+.page:nth-child(3) .img3 {
+  position: absolute;
+  top: 5vw;
+  left: 32vw;
+}
+.page:nth-child(3) .img4 {
+  position: absolute;
+  top: 77.5vw;
+  left: -16vw;
+}
+.page:nth-child(3) .img5 {
+  position: absolute;
+  top: 41vw;
+  left: -16vw;
+}
+.page:nth-child(3) .img6 {
+  position: absolute;
+  top: 77vw;
+  left: 32vw;
+}
+.page:nth-child(3) .img7 {
+  position: absolute;
+  top: 41vw;
+  left: 32vw;
+}
+.page:nth-child(4) h3 {
+  font-size: 3.5vh;
+  margin-top: 7vh;
+  text-align: center;
+  font-weight: 500;
+  color: #000;
+}
+.page:nth-child(4) .png {
+  margin: 0 auto;
+  margin-bottom: 1vh;
+  padding-top: 2vh;
+  position: relative;
+  width: 43vh;
+  height: 44vh;
+}
+.page:nth-child(4) .png img {
+  width: 20vh;
+  border: 5px solid white;
+  box-shadow: 2px 2px 4px #666;
+  border-radius: 5vh;
+}
+.page:nth-child(4) .png #image4 {
+  margin-bottom: 2vh;
+}
+.page:nth-child(4) .png #image5 {
+  margin-bottom: 2vh;
+}
+.page:nth-child(4) .bian {
+  bottom: 0;
+  font-size: 2.5vh;
+  line-height: 4vh;
+  width: 42.5vh;
+  padding: 2vh;
+  margin: 0 auto;
+  margin-top: 4vh;
+  border-radius: 7vh;
+  text-align: center;
+}
+.page:nth-child(4) .bian p {
+  text-align: center;
+  display: block;
+  width: 40vh;
+  font-weight: 500;
+  margin: 0 auto;
+}
+.page:nth-child(4) .bian p i {
+  display: block;
+}
+.page:nth-child(5) h3 {
+  font-size: 3.5vh;
+  margin-top: 7vh;
+  text-align: center;
+  font-weight: 500;
+}
+.page:nth-child(5) .png {
+  margin: 0 auto;
+  margin-bottom: 1vh;
+  padding-top: 2vh;
+  position: relative;
+  width: 43vh;
+  height: 44vh;
+}
+.page:nth-child(5) .png img {
+  width: 20vh;
+  border: 5px solid white;
+  box-shadow: 2px 2px 4px #666;
+  border-radius: 5vh;
+}
+.page:nth-child(5) .png #image4 {
+  margin-bottom: 2vh;
+}
+.page:nth-child(5) .png #image5 {
+  margin-bottom: 2vh;
+}
+.page:nth-child(5) .bian {
+  bottom: 0;
+  font-size: 2.5vh;
+  line-height: 4vh;
+  width: 48vh;
+  padding: 2vh;
+  margin: 0 auto;
+  margin-top: 4vh;
+  border-radius: 7vh;
+}
+.page:nth-child(5) .bian p {
+  text-align: center;
+  display: block;
+  width: 45vh;
+  font-weight: 500;
+  margin: 0 auto;
+}
+.page:nth-child(5) .bian p i {
+  display: block;
+}
+.page:nth-child(6) h3 {
+  font-size: 3.5vh;
+  margin-top: 6vh;
+  text-align: center;
+  font-weight: 500;
+}
+.page:nth-child(6) .png {
+  margin: 0 auto;
+  margin-bottom: 1vh;
+  padding-top: 2vh;
+  position: relative;
+  width: 50vh;
+  height: 44vh;
+}
+.page:nth-child(6) .png img {
+  width: 24vh;
+  border: 5px solid white;
+  box-shadow: 2px 2px 4px #666;
+  border-radius: 5vh;
+}
+.page:nth-child(6) .png #image4 {
+  margin-bottom: 2vh;
+}
+.page:nth-child(6) .png #image5 {
+  margin-bottom: 2vh;
+}
+.page:nth-child(6) .png #image23 {
+  width: 42vh;
+}
+.page:nth-child(6) .bian {
+  bottom: 0;
+  font-size: 2.5vh;
+  line-height: 4vh;
+  width: 48vh;
+  padding: 2vh;
+  margin: 0 auto;
+  margin-top: 6vh;
+  border-radius: 7vh;
+}
+.page:nth-child(6) .bian p {
+  text-align: center;
+  display: block;
+  width: 45vh;
+  font-weight: 500;
+  margin: 0 auto;
+}
+.page:nth-child(6) .bian p i {
+  display: block;
+}
+.page:nth-child(7) h3 {
+  font-size: 3.5vh;
+  margin-top: 7vh;
+  text-align: center;
+  font-weight: 500;
+}
+.page:nth-child(7) .png {
+  margin: 0 auto;
+  margin-bottom: 1vh;
+  padding-top: 1vh;
+  position: relative;
+  width: 43vh;
+  height: 44vh;
+}
+.page:nth-child(7) .png img {
+  border: 5px solid white;
+  box-shadow: 2px 2px 4px #666;
+  border-radius: 5vh;
+}
+.page:nth-child(7) .png #image4 {
+  width: 29vh;
+  margin-bottom: 2vh;
+}
+.page:nth-child(7) .png #image24 {
+  width: 30vh;
+}
+.page:nth-child(7) .bian {
+  bottom: 0;
+  font-size: 2.5vh;
+  line-height: 4vh;
+  width: 48vh;
+  padding: 2vh;
+  margin: 0 auto;
+  margin-top: -3vh;
+  border-radius: 7vh;
+}
+.page:nth-child(7) .bian p {
+  text-align: center;
+  display: block;
+  width: 45vh;
+  font-weight: 500;
+  margin: 0 auto;
+}
+.page:nth-child(7) .bian p i {
+  display: block;
+}
+.page:nth-child(8) .png {
+  margin: 0 auto;
+  margin-bottom: 0vh;
+  padding-top: 5vh;
+  width: 49vh;
+  height: 42vh;
+  text-align: center;
+}
+.page:nth-child(8) .png img {
+  border: 5px solid white;
+  box-shadow: 2px 2px 4px #666;
+  border-radius: 5vh;
+}
+.page:nth-child(8) .png #image4 {
+  width: 49vh;
+  margin-bottom: 2vh;
+}
+.page:nth-child(8) .bian {
+  bottom: 0;
+  font-size: 2.5vh;
+  line-height: 4vh;
+  width: 48vh;
+  padding: 2vh;
+  margin: 0 auto;
+  margin-top: 2vh;
+  border-radius: 7vh;
+}
+.page:nth-child(8) .bian p {
+  text-align: center;
+  display: block;
+  width: 45vh;
+  font-weight: 500;
+  margin: 0 auto;
+}
+.page:nth-child(8) .bian p i {
+  display: block;
+}
+.page:nth-child(9) .botle {
+  margin-top: 12vh;
+}
+.page:nth-child(9) .head {
+  height: 5vh;
+  width: 50vh;
+  margin: 0  auto;
+}
+.page:nth-child(9) .head .left {
+  float: left;
+  width: 22vh;
+  height: 3vh;
+  border-bottom: 2px solid #514402;
+}
+.page:nth-child(9) .head img {
+  width: 4vh;
+}
+.page:nth-child(9) .head .right {
+  float: right;
+  width: 22vh;
+  height: 3vh;
+  border-bottom: 2px solid #514402;
+}
+.page:nth-child(9) span {
+  font-size: 3vh;
+  line-height: 5vh;
+}
+.page:nth-child(9) .write {
+  width: 33vh;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 2.5vh;
+  line-height: 5vh;
+}
+.page:nth-child(9) .end {
+  width: 92vw;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 4vw;
+}
+.page:nth-child(9) .end h3 {
+  font-size: 6vw;
+  margin-top: 5vw;
+  margin-bottom: 4vw;
+  font-weight: 500;
+}
+.page:nth-child(9) .end .box {
+  display: flex;
+}
+.page:nth-child(9) .end .box img {
+  width: 31vw;
+}
+.page:nth-child(9) .end .box .tex {
+  text-align: center;
+  padding-top: 2vw;
+}
+.page:nth-child(9) .end .box .tex i {
+  display: inline-block;
+  font-size: 4vw;
+  line-height: 8vw;
+}
+.look-more {
+  position: fixed;
+  bottom: 3%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /*  down */
+}
+.look-more img:last-child {
+  animation-delay: -1s;
+  -webkit-animation-delay: -1s;
+}
+.look-more img:nth-child(2) {
+  animation-delay: -0.5s;
+  -webkit-animation-delay: -0.5s;
+}
+.look-more img:first-child {
+  animation-delay: 0s;
+  -webkit-animation-delay: 0s;
+}
+.look-more img {
+  stroke: #fff;
+  fill: transparent;
+  stroke-width: 2px;
+  animation: downMove 2s infinite;
+  -webkit-animation: downMove 2s infinite;
+}
+@keyframes downMove {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.look-more img {
+  width: 15vw;
+  height: 12vw;
+  display: inline-block;
+  color: #c5f6f393;
+}
+.page:nth-child(2) {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: -10;
+  zoom: 1;
+  background: url("./images/江西科技师范大学背景2.gif") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.page:nth-child(2) .wrapper {
+  width: 99vw;
+}
+.page:nth-child(1) {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  z-index: -10;
+  /*因为背景图片应该放在最下方，所以设置一个层级*/
+  zoom: 1;
+  background: url("./images/江西科技范师范大学70.gif") no-repeat center center;
+  /*背景图路径 背景图不平铺 背景图垂直、水平均居中 */
+  background-size: cover;
+  /* ---把背景图片放大到适合元素容器的尺寸，图片比例不变，但某些部分被切割无法显示完整背景图像 */
+  background-attachment: fixed;
+  /* 当内容高度大于图片高度时，背景图像的位置相对于 可视窗口 固定，此条属性必须设置 */
+}
+.page:nth-child(3) {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  zoom: 1;
+  background: url("http://ruvzyc90j.hn-bkt.clouddn.com/%E6%A0%A1%E5%BA%86%E6%8E%A8%E6%96%87%E9%A1%B9%E7%9B%AE/images/%E6%B1%9F%E8%A5%BF%E7%A7%91%E6%8A%80%E5%B8%88%E8%8C%83%E5%A4%A7%E5%AD%A6%E8%83%8C%E6%99%AF2.gif?e=1684592316&token=2Vsl2hAPd71Kaq8AVedrITEj58Olh0Gzb9AYeiHg:SJ-pwNJ89TIKAG1lDv-DAoUvt6M=") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: left;
+}
+.page:nth-child(4) {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  zoom: 1;
+  background: url("http://ruvzyc90j.hn-bkt.clouddn.com/%E6%A0%A1%E5%BA%86%E6%8E%A8%E6%96%87%E9%A1%B9%E7%9B%AE/images/%E6%B1%9F%E8%A5%BF%E7%A7%91%E6%8A%80%E5%B8%88%E8%8C%83%E5%A4%A7%E5%AD%A6%E8%83%8C%E6%99%AF2.gif?e=1684592316&token=2Vsl2hAPd71Kaq8AVedrITEj58Olh0Gzb9AYeiHg:SJ-pwNJ89TIKAG1lDv-DAoUvt6M=") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.page:nth-child(5) {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  zoom: 1;
+  background: url("http://ruvzyc90j.hn-bkt.clouddn.com/%E6%A0%A1%E5%BA%86%E6%8E%A8%E6%96%87%E9%A1%B9%E7%9B%AE/images/%E6%B1%9F%E8%A5%BF%E7%A7%91%E6%8A%80%E5%B8%88%E8%8C%83%E5%A4%A7%E5%AD%A6%E8%83%8C%E6%99%AF2.gif?e=1684592316&token=2Vsl2hAPd71Kaq8AVedrITEj58Olh0Gzb9AYeiHg:SJ-pwNJ89TIKAG1lDv-DAoUvt6M=") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.page:nth-child(6) {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  zoom: 1;
+  background: url("http://ruvzyc90j.hn-bkt.clouddn.com/%E6%A0%A1%E5%BA%86%E6%8E%A8%E6%96%87%E9%A1%B9%E7%9B%AE/images/%E6%B1%9F%E8%A5%BF%E7%A7%91%E6%8A%80%E5%B8%88%E8%8C%83%E5%A4%A7%E5%AD%A6%E8%83%8C%E6%99%AF2.gif?e=1684592316&token=2Vsl2hAPd71Kaq8AVedrITEj58Olh0Gzb9AYeiHg:SJ-pwNJ89TIKAG1lDv-DAoUvt6M=") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.page:nth-child(7) {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  zoom: 1;
+  background: url("http://ruvzyc90j.hn-bkt.clouddn.com/%E6%A0%A1%E5%BA%86%E6%8E%A8%E6%96%87%E9%A1%B9%E7%9B%AE/images/%E6%B1%9F%E8%A5%BF%E7%A7%91%E6%8A%80%E5%B8%88%E8%8C%83%E5%A4%A7%E5%AD%A6%E8%83%8C%E6%99%AF2.gif?e=1684592316&token=2Vsl2hAPd71Kaq8AVedrITEj58Olh0Gzb9AYeiHg:SJ-pwNJ89TIKAG1lDv-DAoUvt6M=") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.page:nth-child(8) {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  zoom: 1;
+  background: url("http://ruvzyc90j.hn-bkt.clouddn.com/%E6%A0%A1%E5%BA%86%E6%8E%A8%E6%96%87%E9%A1%B9%E7%9B%AE/images/%E6%B1%9F%E8%A5%BF%E7%A7%91%E6%8A%80%E5%B8%88%E8%8C%83%E5%A4%A7%E5%AD%A6%E8%83%8C%E6%99%AF2.gif?e=1684592316&token=2Vsl2hAPd71Kaq8AVedrITEj58Olh0Gzb9AYeiHg:SJ-pwNJ89TIKAG1lDv-DAoUvt6M=") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.page:nth-child(9) {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  zoom: 1;
+  background: url("http://ruvzyc90j.hn-bkt.clouddn.com/%E6%A0%A1%E5%BA%86%E6%8E%A8%E6%96%87%E9%A1%B9%E7%9B%AE/images/%E6%B1%9F%E8%A5%BF%E7%A7%91%E6%8A%80%E5%B8%88%E8%8C%83%E5%A4%A7%E5%AD%A6%E8%83%8C%E6%99%AF2.gif?e=1684592316&token=2Vsl2hAPd71Kaq8AVedrITEj58Olh0Gzb9AYeiHg:SJ-pwNJ89TIKAG1lDv-DAoUvt6M=") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+ </style>
+<script>
+   var pages = document.getElementsByClassName('page');//获取页面的节点集合
+var startY,endY,dis = 0; //第一次触碰的焦点 ，最后触碰的焦点 ，滑动距离
+var index = 0;//页码
+
+//获取第一次触碰屏幕的焦点startY的事件
+document.addEventListener('touchstart',function(e){
+	var touch = e.touches[0];
+	startY = touch.pageY;
+})
+
+//获取最后触摸的焦点endY , 算出滑动屏幕的距离dis的事件
+document.addEventListener('touchmove',function(e){
+	var touch = e.touches[0];
+	endY = touch.pageY;
+	dis = startY - endY;
+})
+
+//滑动事件结束 如果手指滑动距离大于150 并且正向则执行pageTop函数 -->向上滑动翻页
+//滑动事件结束 如果手指滑动距离大于150 方向为负则执行pageDown函数 -->向下滑动翻页
+//翻页完毕 执行qingling函数 进行数值清零
+document.addEventListener('touchend',function(e){
+	if(Math.abs(dis)>2){
+		if(dis>0){
+			pageTop(index);
+			qingling();
+		}else{
+			pageDown(index);
+			qingling();
+		}
+	}
+})
+
+//向上翻页并添加翻页动画的样式
+function pageTop(n){
+	if(n<pages.length-1){
+		n++;
+		index++;
+		
+//  		这个定时器的作用执行此函数一秒后  本页面添加一个隐藏的样式  随后滑走
+		setTimeout(function(){
+			pages[n-1].classList.add('hide');
+		},1000)
+		
+		pages[n-1].classList.add('out_top');
+		pages[n-1].classList.remove('in_top','out_down','in_down');
+		pages[n].classList.add('in_top');
+		pages[n].classList.remove('out_top','out_down','in_down');
+		pages[n].style.display = 'block';
+	}
+}
+
+//向下翻页并添加翻页动画的样式
+function pageDown(n){
+	if(n>0){
+		n--;
+		index--;
+		
+		setTimeout(function(){
+			pages[n+1].classList.add('hide');
+		},1000)
+		
+		pages[n+1].classList.add('out_down');
+		pages[n+1].classList.remove('in_top','out_top','in_down');
+		pages[n].classList.add('in_down');
+		pages[n].classList.remove('out_top','out_down','in_top');
+	}
+}
+
+//使相关参数清零
+function qingling(){
+	startY = 0;
+	endY = 0;
+	dis = 0;
+}
+
+
+</script>    
+</head>
+
+<body>
+<div class="show">
+<!-- 第一页 -->
+   <div class="page">
+    <header class="wrapper">
+        <!-- <div class="tet">小科今年70岁了！！！</div>
+        <span>2023.5.10</span> -->
+    </header>
+    <div class="look-more">
+        <img src="https://img1.imgtp.com/2023/05/20/MWOqTAIv.png" alt="">
+        <img src="https://img1.imgtp.com/2023/05/20/MWOqTAIv.png" alt="">
+        <img src="https://img1.imgtp.com/2023/05/20/MWOqTAIv.png" alt="">
+      </div>
+   </div>
+<!-- 第二页 -->
+   <div class="page">
+       <section class="clearfix">
+         <img src="https://img1.imgtp.com/2023/05/20/O16iA9cj.jpg" id="png1" alt="">
+        <div class="text1">
+        <p>我校江西科技师范大学,</p>
+        <p>矗立于江右形胜之地上，</p>
+        <p>自壬辰年肇始，至于今之壬寅年,</p>
+        <p>其为时已七十载, </p>
+        <p>值此之际，喜迎我校七十华诞，</p>
+        <p>亦盛矣哉!</p>
+        </div> 
+       </section>  
+       <section class="clearfix">
+        <img src="https://img1.imgtp.com/2023/05/20/bNpRRLgc.jpg" id="png2" alt="">
+        <div class="text2">
+         <p>七十年春华秋实，</p>
+         <p>风雨兼程；</p>
+        <p>七十年开拓进取，</p> 
+        <p>砥砺沧桑。</p>
+        <p>枫林物华聚人杰，</p>
+        <p>前湖毓秀起名庠。</p>
+        </div>
+      </section>
+   </div>
+<!-- 第三页 -->
+   <div class="page">
+   <div class="box">
+         <img src="https://img1.imgtp.com/2023/05/20/0x4cioRI.jpg" alt="" class="img1">
+      <img src="https://img1.imgtp.com/2023/05/20/en57zys2.jpg" alt="" class="img3">
+      <img src="https://img1.imgtp.com/2023/05/20/414bYg2O.jpg" alt="" class="img5">
+         <img src="https://img1.imgtp.com/2023/05/19/IrPmDOCK.jpg" alt="" class="img4">
+         <img src="https://img1.imgtp.com/2023/05/20/1yA3yK46.jpg" alt="" class="img6">
+      <img src="https://img1.imgtp.com/2023/05/20/56083GgT.jpg" alt="" class="img7">
+   </div>
+   <div class="text">
+         <p> 在时光长廊细数，</p>
+         <p> 与你朝夕相伴的时光</p>
+      </div>
+   </div>
+<!-- 第四页    -->
+<div class="page">
+   <h3>教学楼：培元固本，守正创新</h3>
+   <div class="png">
+      <img src="https://img1.imgtp.com/2023/05/20/czO2pffX.jpg" id="image4" alt="">
+      <img src="https://img1.imgtp.com/2023/05/20/N9jTzPyG.jpg" id="image5" alt="">
+      <img src="https://img1.imgtp.com/2023/05/20/X1gTT6bh.jpg" id="image23" alt="">
+      <img src="https://img1.imgtp.com/2023/05/20/b8TGFXLz.jpg" id="image24" alt="">
+   </div>
+       <div class="bian"><p> 
+         <i>白云升远岫，</i>
+         <i>摇曳入晴空。</i>  
+         <i>教学楼里，</i>
+         <i>俯首是专业学习的打磨，</i>
+         <i>昂首是未来可期的梦想。</i>
+         <i>时光知味，岁月沉香，</i>
+         <i>现实的生活忙忙碌碌，</i>
+         <i>但是我们一直在路上。</i> 
+      </p> 
+   </div> 
+   </div>
+<!-- 第五页 -->
+<div class="page">
+      <h3>图书馆：山不让尘，川不盈辞</h3>
+      <div class="png">
+         <img src="https://img1.imgtp.com/2023/05/20/adRX1x0K.jpg" id="image4" alt="">
+         <img src="https://img1.imgtp.com/2023/05/20/NDkjskfU.jpg" id="image5" alt="">
+         <img src="https://img1.imgtp.com/2023/05/20/0q65AJRc.jpg" id="image23" alt="">
+         <img src="https://img1.imgtp.com/2023/05/20/3CjlOz83.jpg" id="image24" alt="">
+      </div>
+         <!-- <span>Our library~</span> -->
+         <!-- <span id="sp">Our library~</span> -->
+          <div class="bian"><p> 
+            <i>穹苍有一场盛大的日落,</i>
+            <i>铺了一路流光，</i>  
+            <i>在稀疏云絮里坠下。</i>
+            <i>于百花路借上落日的余晖，</i>
+            <i>耳边微风吹拂，</i>
+            <i>图书馆人影逐渐清晰,</i>
+            <i>奋斗生活图卷缓缓展开，</i>
+            <i>  展开着越努力越幸福的追梦画卷。</i> 
+         </p> 
+      </div> 
+   </div>
+<!-- 第六页 -->
+<div class="page">
+   <h3>体育场：致知力行，踵事增华</h3>
+   <div class="png">
+      <img src="https://img1.imgtp.com/2023/05/20/vscdmzdg.jpg" id="image4" alt="">
+      <img src="https://img1.imgtp.com/2023/05/20/F7Vj81Ql.jpg" id="image5" alt="">
+      <img src="https://img1.imgtp.com/2023/05/20/6JNc6DO3.jpg" id="image23" alt="">
+      <!-- <img src="./images/39.jpg" id="image24" alt=""> -->
+   </div>
+      <!-- <span>Our library~</span> -->
+      <!-- <span id="sp">Our library~</span> -->
+       <div class="bian"><p> 
+         <i>炽热的青春从不后退，</i>
+         <i>我们一往无前。</i>  
+         <i>体育馆挥洒汗水，</i>
+         <i>全身的细胞都在热情叫嚣。</i>
+         <i>生命不息，运动不止。</i>
+         <i>青春的脚步，青春的活力，</i>
+         <i>青春的速度，青春的我们！</i>
+         <i>热血逐梦，目光遥长奔向远方。</i> 
+      </p> 
+   </div> 
+   </div>
+<!-- 第七页 -->
+<div class="page">
+   <h3>未名湖：怀瑾握瑜，风禾尽起</h3>
+   <div class="png">
+      <img src="https://img1.imgtp.com/2023/05/20/AkVVzADp.jpg" id="image4" alt="">
+      <!-- <img src="./images/35.jpg" id="image5" alt="">
+      <img src="./images/38.jpg" id="image23" alt=""> -->
+      <img src="https://img1.imgtp.com/2023/05/20/aeabKPOV.jpg" id="image24" alt="">
+   </div>
+      <!-- <span>Our library~</span> -->
+      <!-- <span id="sp">Our library~</span> -->
+       <div class="bian"><p> 
+         <i>微波荡漾的湖面，</i>
+         <i>在晚霞的照射下粼粼闪光，</i>
+         <i>柔软的云朵沿着天边远去。</i>  
+         <i>静静躺在湖边的草地上，</i>
+         <i>看阳光折射的光线透过水面，</i>
+         <i>轻轻抚摸在自己脸上，</i>
+         <i>温暖着每一寸毛孔与血液。</i>
+         <i>独自站在湖畔，</i>
+         <i>凝望着眼前的建筑，</i> 
+         <i>仿佛可以听到科技师大的呼吸和心跳。</i> 
+      </p> 
+   </div> 
+</div>
+<!-- 第八页 -->
+<div class="page">
+   <div class="png">
+      <img src="https://img1.imgtp.com/2023/05/20/aeabKPOV.jpg" id="image4" alt="">
+   </div>
+       <div class="bian"><p> 
+         <i>亲爱的科技师大，</i>
+         <i>七十载弦歌不辍，七十载风华依旧。</i>
+         <i>我将依偎在你的胸怀前，</i>  
+         <i>捕捉灿烂笑颜定格的瞬间。</i>
+         <i>让最美好的祝福绵延在笔端，</i>
+         <i>让最真挚的情意诉说在纸间。</i>
+         <i>一同描绘职教名校的明天，</i>
+         <i>一起书写未来的无限！</i>
+         <i>一切美好确幸，都是你的模样</i> 
+         <i>写尽千山，落笔皆是你。</i> 
+         <i>亲爱的科技师大,</i> 
+         <i> 未来的新征程，我们始终在路上！</i> 
+      </p> 
+   </div> 
+</div>
+<!-- 第九页 -->
+<div class="page">
+   
+   <div class="botle">
+   <div class="head"><div class="left"></div>
+   <img src="https://img1.imgtp.com/2023/05/20/ouL1O9GI.png" alt="">
+   <div class="right"></div>
+   </div>
+   <span>END</span>
+   <div class="write">
+      <p>审核人|罗燕 欧阳式建</p>
+      <p>责编|张晓杰 郭秋君 辜万清</p>
+      <p>编制|胡翼虎</p>
+      <p>海报|罗宇欢</p>
+      <p>文案|陈婕</p>
+      <p>图片|李亚鹏</p>
+      <p>出品：校团委"小波菜工作室"</p>
+      </div>
+   <div class="end">
+      <h3>江西科技师范大学团委新媒体中心</h3>
+   <div class="box">  
+      <img src="https://img1.imgtp.com/2023/05/20/slErezYP.jpg" alt="">
+
+       <div class="tex">
+        <i>微信公众号：科大青年</i>
+        <i>抖音：江西科技师范大学团委</i>
+        <i>新浪微博：江西科技师范大学团委</i>
+       </div>
+   </div> 
+   </div>
+</div>
+</div>
+ </div>
+</body>
+</html>
